@@ -13,7 +13,7 @@ if ($method == 'POST') {
 // 	$response->fulfillmentText = $fulfillmentText;
 	//$response->displayText = $fulfillmentText;
 	//$response->source = "webhook";
-  $card = array(
+  $card[] = array(
 		    'card' => array(
 			'title' => 'John Doe',
 			'subtitle' => 'john@example.com'
