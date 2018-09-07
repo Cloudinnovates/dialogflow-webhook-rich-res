@@ -13,8 +13,8 @@ if ($method == 'POST') {
 // 	$response->fulfillmentText = $fulfillmentText;
 	//$response->displayText = $fulfillmentText;
 	//$response->source = "webhook";
-  
-  $response->fulfillmentMessages = array("id" => "1", "name" => "Test");
+  $arr[] = array(1 => 'one', 2 => 'two', 3 => 'three');
+  $response->fulfillmentMessages = $arr;
 	echo json_encode($response);
 } else {
 	echo "Method not allowed by els";
