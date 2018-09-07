@@ -23,7 +23,7 @@ if ($method == 'POST') {
 			'subtitle' => 'jane@example.com'
 		    )
   		);
-  $response->fulfillmentMessages = $card;
+  $response->fulfillmentMessages = array($card);
 	echo json_encode($response);
 } else {
 	echo "Method not allowed by els";
