@@ -14,7 +14,7 @@ if ($method == 'POST') {
 	//$response->displayText = $fulfillmentText;
 	//$response->source = "webhook";
   
-  $response->messages = "carousel message";
+  $response->fulfillmentMessages = array("id" => "1", "name" => "Test");
 	echo json_encode($response);
 } else {
 	echo "Method not allowed by els";
