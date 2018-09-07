@@ -13,17 +13,19 @@ if ($method == 'POST') {
 // 	$response->fulfillmentText = $fulfillmentText;
 	//$response->displayText = $fulfillmentText;
 	//$response->source = "webhook";
-  $card[] = array(
-		    'card' => array(
-			'title' => 'John Doe',
-			'subtitle' => 'john@example.com'
-		    ),
-		    'card' => array(
-			'title' => 'Jane Doe',
-			'subtitle' => 'jane@example.com'
-		    )
+  $card[] = array(array(
+		        'card' => array(
+			        'title' => 'John Doe',
+			        'subtitle' => 'john@example.com'
+		        )
+		    ), array(
+		        'card' => array(
+			        'title' => 'Jane Doe',
+			        'subtitle' => 'jane@example.com'
+		        )
+		   )
   		);
-  $response->fulfillmentMessages = array($card);
+  $response->fulfillmentMessages = $card;
 	echo json_encode($response);
 } else {
 	echo "Method not allowed by els";
