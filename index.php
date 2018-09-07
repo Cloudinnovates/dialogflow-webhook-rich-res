@@ -13,7 +13,7 @@ if ($method == 'POST') {
 // 	$response->fulfillmentText = $fulfillmentText;
 	//$response->displayText = $fulfillmentText;
 	//$response->source = "webhook";
-  $card[] = array(array(
+  $card[] = array(
 		        'card' => array(
 			        'title' => 'John Doe',
 			        'subtitle' => 'john@example.com'
@@ -23,8 +23,7 @@ if ($method == 'POST') {
 			        'title' => 'Jane Doe',
 			        'subtitle' => 'jane@example.com'
 		        )
-		   )
-  		);
+		   );
   $response->fulfillmentMessages = $card;
 	echo json_encode($response);
 } else {
