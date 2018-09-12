@@ -16,7 +16,7 @@ if ($method == 'POST') {
   $card = array(array('card' => array('title' => 'john', 'subtitle' => 'john hoge')),
               array('card' => array('title' => 'jane', 'subtitle' => 'jane hoge')));
 	
-  $response->fulfillmentMessages = $card;
+  $response->fulfillmentMessages = "Yes, you are here!";
 	echo json_encode($response);
 } else {
 	echo "Method not allowed by els";
