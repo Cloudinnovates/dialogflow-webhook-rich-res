@@ -19,7 +19,5 @@ if ($method == 'POST') {
 	
   $response->fulfillmentMessages = $card;
 	echo json_encode($response);
-} else {
-	echo "Method not allowed by els";
 }
 ?>
